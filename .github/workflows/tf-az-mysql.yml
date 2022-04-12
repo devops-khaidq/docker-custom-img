@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  REGISTRY_URL: docker.pkg.github.com
+  REGISTRY_URL: ghcr.io
   CURRENT_DIR: ./terraform-azcli-mysql-ubuntu
   IMG_NAME: tf-az-mysql
 
