@@ -9,4 +9,4 @@ RUN apt update &&\
     curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add - &&\
     apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" &&\
     apt update && apt install terraform -y &&\
-    apt clean && apt remove -y lsb-release gnupg software-properties-common ca-certificates apt-transport-https curl && apt autoremove -y && rm -rf /var/lib/apt/lists/*;
+    apt clean && apt remove -y lsb-release gnupg software-properties-common ca-certificates apt-transport-https && apt autoremove -y && rm -rf /var/lib/apt/lists/*;
